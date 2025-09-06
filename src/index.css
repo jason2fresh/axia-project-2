@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e2e7eb;
+}
+
+.logoimg {
+  width: 200px;
+  position: absolute;
+  background-color: transparent;
+  top: -20px;
+  z-index: 3;
+}
+
+/* .centerapp{
+    position: absolute;
+    top: -20px;
+} */
+
+/* .signuplink-container {
+  position: relative;
+} */
+.signuplink {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b, #fffb02);
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 84%;
+  /* position: relative; */
+  /* right: 30px;
+  top: -120px; */
+}
+
+.loginDiv {
+  width: 400px;
+  /* height: 20vh; */
+  border: 4px solid #963fcfff;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 35vw;
+  margin-top: 10%;
+  border-radius: 10%;
+  box-shadow: 4px 8px 12px gray;
+  position: fixed;
+
+}
+
+.loginDiv h2 {
+  padding: 20px;
+  font-size: 30px;
+}
+.emailcontainer {
+  justify-items: left;
+}
+
+.emailcontainer label {
+  display: block;
+}
+.emailcontainer input {
+  display: block;
+  width: 300px;
+  padding: 8px;
+  margin: 10px 0;
+  border-style: none;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.passwordcontainer {
+  justify-items: left;
+  margin-bottom: 40px;
+}
+
+.passwordcontainer label {
+  display: block;
+}
+.passwordcontainer input {
+  display: block;
+  width: 300px;
+  padding: 8px;
+  margin: 10px 0;
+  border-style: none;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.loginDiv button {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #963fcfff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.loginDiv button:hover {
+  color: #963fcfff;
+  background-color: #fff;
+}
+
+.signup-div-container {
+  width: 400px;
+  height: 100vh;
+  border: 4px solid #963fcfff;
+  padding: 30px;
+  /* text-align: center;
+  justify-content: center; */
+  margin-left: 35vw;
+  margin-top: 20px;
+  border-radius: 10%;
+  box-shadow: 4px 8px 12px gray;
+  position: absolute;
+  top: 50px;
+}
+
+.signup-div-container h2{
+    padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.signup-div-container input {
+  display: block;
+  width: 300px;
+  padding: 8px;
+  margin: 20px 0;
+  border-style: none;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-items: left;
+}
+
+.signup-div-container button{
+   width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #963fcfff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: absolute;
+  justify-content: center;
+}
+
+.signup-div-container button:hover {
+  color: #963fcfff;
+  background-color: #fff;
+  border: 2px solid #963fcfff;
+}  
+
+.signup-div-container a{
+  position: absolute;
+  top: 630px;
+  left: 80px;
+}
+
+.forgot-password {
+   width: 400px;
+  height: 40vh;
+  border: 4px solid #963fcfff;
+  padding: 30px;
+  /* text-align: center; */
+  /* justify-content: center; */
+  margin-left: 35vw;
+  margin-top: 20px;
+  border-radius: 10%;
+  box-shadow: 4px 8px 12px gray;
+  position: relative;
+}
+
+.forgot-password h2{
+   padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.forgot-password input{
+  display: block;
+  width: 300px;
+  padding: 8px;
+  margin: 20px 0;
+  border-style: none;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-items: left;
+}
+
+.forgot-password button{
+   width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #963fcfff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  left: 100px;
+}
+
+
+.landingpage-header{
+  background-image:linear-gradient(to bottom,rgba(255,255,255,0.3), rgba(0,255,255,0.3)), url("/gold.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  z-index: 2;
+}
+
+nav  {
+  display: flex;
+  gap: 50px;
+  background-color: transparent;
+  align-items: center;
+  margin-bottom: 600px;
+  margin-left: 48%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  background-color: #000000;
+}
+
+/* .nav-icon-special{
+  position: absolute;
+  right: 20px;
+} */
+
+
+.landing-page-login-button{
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #963fcfff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.landing-page-login-button:hover{
+   color: #963fcfff;
+  background-color: #fff;
+}
+
+.landing-page-signup-button{
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b, #fffb02);
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.landing-page-signup-button:hover{
+  background: linear-gradient(to right, #fffb02, #feb47b, #ff7e5f);
+  
+}
+
+.captiontitle{
+  position: absolute;
+  /* top: 50%; */
+  right: 10%;
+  justify-items: center;
+  align-self: center;
+  left: 10%;
+  background-color: transparent;
+}
+
+.captiontitle h2{
+  font-size: 90px;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+.captiontitle p{
+  font-size: 25px;
+  background-color: transparent;
+  font-family:cursive;
+}
+
+
+
+.herosection {
+  position: absolute;
+  /* justify-items: center; */
+  /* align-self: center; */
+  margin-top: 100px;
+  height: 90vh;
+  left: 15%;
+  right: 15%;
+  background-image: url("/heroimage.png");
+  background-repeat: no-repeat;
+  background-position:center 30%;
+  background-size: cover;
+}
+
+.herosection h1{
+  font-size: 90px;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+.herosection p{
+  font-size: 30px;
+  background-color: transparent;
+  font-family:cursive;
+  margin-left: 25%;
+}
+
+.herosection button{
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  border: none;
+  padding: 30px 100px;
+  border-radius: 10px;
+  background-color: #963fcfff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.herosection button:hover{
+   color: #963fcfff;
+  background-color: #fff;
+}

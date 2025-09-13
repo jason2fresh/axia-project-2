@@ -44,7 +44,7 @@ export default function Login() {
               <input
                 id="email"
                 type="email"
-                // placeholder="Email"
+                placeholder="john@gmail.com"
                 value={email}
                 onChange={(userAction) => setEmail(userAction.target.value)}
               />
@@ -55,7 +55,7 @@ export default function Login() {
               <input
                 id="password"
                 type="password"
-                // placeholder="Password"
+                placeholder="m38rmF$"
                 value={password}
                 onChange={(userAction) => setPassword(userAction.target.value)}
               />

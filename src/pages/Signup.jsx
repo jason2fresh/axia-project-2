@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 export default function Signup() {
   const [firstName, setFirstName] = useState("");
@@ -7,6 +8,7 @@ export default function Signup() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -17,7 +19,7 @@ export default function Signup() {
     }
 
     try {
-      const response = await fetch("https://reqres.in/api/register", {
+      const response = await fetch("https://fakestoreapi.com/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -28,6 +30,8 @@ export default function Signup() {
       }
 
       const data = await response.json();
+      localStorage.setItem("token", data.token);
+        navigate("/dashboard");
       console.log("Signup successful:", data);
       setError("");
       alert("Signup successful!");
